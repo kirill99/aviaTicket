@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: blueviolet;
+  padding: 20px 0;
+}
+
+header .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .box .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .box .title .icon {
+  margin-right: 20px;
+}
+
+header .box .title .text {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.form .box {
+  margin: 0 auto;
+  max-width: 400px;
+}
+/*# sourceMappingURL=style.css.map */
