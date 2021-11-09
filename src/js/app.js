@@ -1,5 +1,10 @@
-import api from './service/api.service';
+import "../css/style.css";
+import "./plugins";
+import locations from './store/location.store';
 
 
-api.countries().then(res => console.log(res));
-api.cities().then(res => console.log(res));
+locations.init().then(res => {
+    console.log(res);
+    console.log(locations);
+    console.log(locations.getCitesByCountryCode("PE"));
+});
