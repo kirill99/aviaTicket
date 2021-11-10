@@ -18,10 +18,9 @@
                     <div class="text">Avia Tickets</div>
                 </div>
                 <div class="curensy">
-                    <select name="curensy" id="curensy">
+                    <select name="curensy" id="currency">
                         <option value="USD">USD</option>
-                        <option value="KZT">KZT</option>
-                        <option value="RUB">RUB</option>
+                        <option value="EUR">EUR</option>
                     </select>
                 </div>
             </div>
@@ -30,6 +29,49 @@
 
 
     <section class="form">
+        <div class="box">
+            <div class="row">
+                <div class="col s12 m12">
+                  <div class="card">
+                      <form action="" name="locationControls">
+                        <div class="card-content">
+                            <span class="card-title">Card Title</span>
+                            <div class="input-field">
+                              <input type="text" id="autocomplete-origin" class="autocomplete">
+                              <label for="autocomplete-origin">Origin</label>
+                            </div>
+      
+                            <div class="input-field">
+                              <input type="text" id="autocomplete-destination" class="autocomplete">
+                              <label for="autocomplete-destination">Destination</label>
+                            </div>
+      
+                            <div class="input-field">
+                              <input type="text" class="datepicker" id="datepicker-depart">
+                              <label for="datepicker-depart">Depart</label>
+                            </div>
+      
+                            <div class="input-field">
+                              <input type="text" class="datepicker" id="datepicker-return">
+                              <label for="datepicker-return">Return</label>
+                            </div>
+      
+                          </div>
+                          <div class="card-action">
+                              <button class="btn waves-effect waves-light" type="reset" name="action">reset
+                                  <i class="material-icons right">cancel</i>
+                              </button>
+      
+                              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                  <i class="material-icons right">send</i>
+                              </button>
+                          </div>
+                      </form>
+
+                  </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 </body>
