@@ -40,3 +40,33 @@ header {
     }
   }
 }
+
+.tickets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .ticket {
+    border: 1px solid black;
+    width: 30%;
+    margin: 15px 20px;
+    padding: 0 15px;
+    .header {
+      display: flex;
+      align-items: center;
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+      .title {
+        margin-left: 20px;
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+    .departure {
+      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

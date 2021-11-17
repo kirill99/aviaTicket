@@ -3,6 +3,7 @@ import "./plugins";
 import locations from './store/location.store';
 import formUI from './views/form.view';
 import currencyUI from './views/currency.view'
+import ticketsUI from './views/tickets.view'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,5 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return_date,
             currency,
         })
+        console.log(locations.lastSearch);
+        
+        ticketsUI.renderTickets(locations.lastSearch)
     }
 })

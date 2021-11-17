@@ -9,6 +9,7 @@ class Locations{
         this.shortCitiesList = null;
         this.airlines = null;
         this.formatDate = helpers.formatDate;
+        this.lastSearch = null;
     }
 
 
@@ -96,7 +97,7 @@ class Locations{
 
     async fetchTickets(params) {
         const response = await this.api.prices(params);
-        console.log(this.serializeTickets(response.data));
+        this.lastSearch = this.serializeTickets(response.data);
     }
 
     serializeTickets(tickets) {

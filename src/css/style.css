@@ -53,4 +53,52 @@ header .box .title .text {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tickets .ticket {
+  border: 1px solid black;
+  width: 30%;
+  margin: 15px 20px;
+  padding: 0 15px;
+}
+
+.tickets .ticket .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tickets .ticket .header .logo {
+  width: 100px;
+  height: 100px;
+}
+
+.tickets .ticket .header .title {
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.tickets .ticket .departure {
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */
